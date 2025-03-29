@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tristanor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tristanor</h1>
+        <p class="subtitle">Traduction instantanée et gratuite</p>
+        
+        <div class="translator">
+            <div class="left">
+                <select id="sourceLanguage">
+                    <option value="auto">Détecter la langue</option>
+                    <option value="fr">Français</option>
+                    <option value="en">Anglais</option>
+                    <option value="es">Espagnol</option>
+                    <option value="de">Allemand</option>
+                    <option value="it">Italien</option>
+                    <option value="pt">Portugais</option>
+                    <option value="ru">Russe</option>
+                    <option value="zh">Chinois</option>
+                </select>
+                <textarea id="sourceText" placeholder="Entrez votre texte ici"></textarea>
+                <span class="char-count">0 caractères</span>
+            </div>
+
+            <div class="middle">
+                <button id="swapButton">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+            </div>
+
+            <div class="right">
+                <select id="targetLanguage">
+                    <option value="fr">Français</option>
+                    <option value="en">Anglais</option>
+                    <option value="es">Espagnol</option>
+                    <option value="de">Allemand</option>
+                    <option value="it">Italien</option>
+                    <option value="pt">Portugais</option>
+                    <option value="ru">Russe</option>
+                    <option value="zh">Chinois</option>
+                </select>
+                <textarea id="targetText" placeholder="Traduction" readonly></textarea>
+                <span class="char-count">0 caractères</span>
+            </div>
+        </div>
+
+        <button id="translateButton">
+            <i class="fas fa-language"></i>
+            Traduire
+        </button>
+
+        <footer>
+            <p>Copyright 2025 Tristanor</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

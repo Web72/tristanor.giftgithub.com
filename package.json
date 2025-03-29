@@ -1,0 +1,11 @@
+{
+  "name": "tristanor",
+  "version": "1.0.0",
+  "description": "Traduction libre et gratuite",
+  "main": "server.js",
+  "dependencies": {
+    "apertium-translator": "^1.0.3",
+    "express": "^4.17.1",
+    "cors": "^2.8.5"
+  }
+}
